@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title Variable, operator, operation</title>
+</head>
+<body>
+  <script>
+    // question:-1     sum of two integer 
+    // question:-2    relation between two integer and string
+    let  a = 10;
+    let b = 5;
+    // console.log("sum of 10 and 20 is " + a + b);  
+    // answer is "sum of 10 and 20 is 105" because + operator concatenates the strings from left to right.
+    console.log("sum of 10 and 20 is " + (a + b));  // answer is "sum of 10 and 20 is 15" because parentheses have higher precedence.
+    
+    // question:-3  -type  coercion
+    // --> type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers).
+     console.log("1"- 1);  // answer is 0 because - operator converts string "1" to number 1 before subtraction.
+     console.log("1"+ 1);  // answer is "11" because + operator concatenates string "1" and number 1.
+
+      console.log("five" - 2); // answer is NaN because "five" cannot be converted to a number.
+
+      // question:-4  -  type casting
+      let age = Number(prompt("Enter your age:")); // type casting string input to number
+      console.log(typeof age); // answer is number because we used Number() to cast the input
+      console.log(typeof age); // answer is string because prompt returns a string. 
+
+      // question:-5  -  swap to variables via methods 
+
+      let x = 10;
+      let y = 20;
+       let temp;
+
+      temp = x;
+      x=y;
+      y=temp;
+      console.log("after swapping x:", x); // answer is 20
+      console.log("after swapping y:", y); // answer is 10
+
+    
+      // swap the variables without using a temporary variable
+      let p = 30;
+      let q = 40;   
+       p =  p  + q;
+       q= p-q;
+       p = p - q;
+       console.log("after swapping p:", p); // answer is 40 
+        console.log("after swapping q:", q); // answer is 30
+    // swap using destructuring assignment (ES6 feature)
+    let m = 50;
+    let n = 60;     
+    [m, n] = [n, m];
+    console.log( m , n); // answer is 60 50
+
+
+  </script>
+</body>
+</html>
