@@ -7,7 +7,46 @@
 </head>
 <body>
   <script>
-    
-  </script>
+     let a = 10;
+      let b = 3;
+      console.log (Math.floor(a/b));
+      // && ||
+      console.log(10>6 && 15<9);
+      // unary operator
+          // math function 
+         
+
+          // question-1
+          // calculate area and perimeter of rectangle
+          let length = 5;
+          let breadth = 3;  
+          let area = length * breadth;
+          let perimeter = 2 * (length + breadth);
+          console.log("Area of rectangle: " + area);
+          console.log("Perimeter of rectangle: " + perimeter);
+
+          // question-2
+          // Generate OTP
+          function generateOTP(length) {
+              let otp = '';
+              for (let i = 0; i < length; i++) {
+                  otp += Math.floor(Math.random() * 10); // Append a random digit
+              }
+              return otp;
+          }   
+          console.log("Generated OTP: " + generateOTP(6));
+
+          // question-3
+          // area of triangle by hero's formula
+
+          let  a = 5;
+          let  b = 6;
+          let  c = 7;
+          let s = (a + b + c) / 2; // semi-perimeter  
+
+          let area = Math.sqrt(s * (s - a) * (s - b) * (s - c));
+          console.log("Area of triangle: " + area);
+          
+    </script>
 </body>
 </html>
