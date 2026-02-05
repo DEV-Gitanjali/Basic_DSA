@@ -8,20 +8,36 @@
 <body>
   <script>
     // question-1  valid votor age
-     let  ans = Number(prompt("enter your age"));
+    //  let  ans = Number(prompt("enter your age"));
      
-     if(isNaN(ans)){
-        console.log("please enter a valid number");
-      } 
-      else if(ans >= 18){
-        console.log( "you are eligible to vote");
-      } else {
-        console.log( "you are not eligible to vote");
-      }
+    //  if(isNaN(ans)){
+    //     console.log("please enter a valid number");
+    //   } 
+    //   else if(ans >= 18){
+    //     console.log( "you are eligible to vote");
+    //   } else {
+    //     console.log( "you are not eligible to vote");
+    //   }
     
    // question-2   shop discount
+     let amount = Number(prompt("enter the amount"));
+       let discount = 0;
 
-     
+       if(amount > 0 && amount <= 5000){
+          discount = 0;
+       } else if(amount >5000 && amount <=7000){
+          discount = 5;
+       }
+        else if(amount >7000 && amount <=9000){
+          discount = 10;
+       }
+        else if(amount >9000){
+          discount = 20;
+       }
+       console.log(amount - Math.floor((discount * amount)/100));
+
+      //  bijil bill
+      
 
   </script>
 </body>
