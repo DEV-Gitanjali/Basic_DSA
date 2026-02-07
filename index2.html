@@ -54,6 +54,131 @@
 
       amount += unit * 4;
       console.log(amount);
+
+  // question-4 find the  amount notes for notes
+let rupees = Number(prompt("Enter the amount"));
+let notes = 0;
+
+if (rupees >= 500) {
+  notes = Math.floor(rupees / 500);
+  console.log("500 notes: " + notes);
+  rupees = rupees % 500;
+}
+if (rupees >= 200) {
+  notes = Math.floor(rupees / 200);
+  console.log("200 notes: " + notes);
+  rupees = rupees % 200;
+}
+if (rupees >= 100) {
+  notes = Math.floor(rupees / 100);
+  console.log("100 notes: " + notes);
+  rupees = rupees % 100;
+}
+if (rupees >= 50) {
+  notes = Math.floor(rupees / 50);
+  console.log("50 notes: " + notes);
+  rupees = rupees % 50;
+}
+if (rupees >= 20) {
+  notes = Math.floor(rupees / 20);
+  console.log("20 notes: " + notes);
+  rupees = rupees % 20;
+}
+if (rupees >= 10) {
+  notes = Math.floor(rupees / 10);
+  console.log("10 notes: " + notes);
+  rupees = rupees % 10;
+}
+if (rupees >= 5) {
+  notes = Math.floor(rupees / 5);
+  console.log("5 notes: " + notes);
+  rupees = rupees % 5;
+}
+if (rupees >= 2) {
+  notes = Math.floor(rupees / 2);
+  console.log("2 notes: " + notes);
+  rupees = rupees % 2;
+}
+if (rupees === 1) {
+  console.log("1 notes: 1");
+}
+
+// Ternary operator
+console.log(123> 13 ? "helloe" : "bye");
+// Nested ternary operator
+  let num  = 0;
+
+  console.log(num >0 ? "positive" : num < 0 ? "negative" : "zero");
+
+  // Swtich case
+      
+     let day = 2;
+      switch (day) {
+        case 1:
+          console.log("Monday");
+          break;
+        case 2:
+          console.log("Tuesday");
+          break;
+        case 3:
+          console.log("Wednesday");
+          break;
+        case 4:
+          console.log("Thursday");
+          break;
+        case 5:
+          console.log("Friday");
+          break;
+        case 6:
+          console.log("Saturday");
+          break;
+        case 7:
+          console.log("Sunday");
+          break;
+        default:
+          console.log("Invalid day");
+      }
+
+      // you can also use switch case for multiple cases
+        let grade = "A";
+        switch (grade) {
+          case "A":
+          case "B":
+          case "C":
+            console.log("Pass");
+            break;
+          case "D":
+          case "E":
+            console.log("Fail");
+            break;
+          default:
+            console.log("Invalid grade");
+        }
+
+        switch (true) {
+          case num > 0:
+            console.log("positive");
+            break;
+          case num < 0:
+            console.log("negative");
+            break;
+          default:
+            console.log("zero");
+        }
+
+
+
+        let numm =  0.1 + 0.10;
+        switch (numm) {
+          case 0.11:
+            console.log("equal");
+            break;
+          case 0.5:
+            console.log("equal");
+            break;
+          default:
+            console.log("not equal");
+        }
     </script>
   </body>
 </html>
