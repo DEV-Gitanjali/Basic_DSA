@@ -7,116 +7,183 @@
   </head>
   <body>
     <script>
-      // question-1  print 1 to 10
-      for (let i = 1; i <= 10; i++) {
-        console.log(i);
-      }
-      for (;;) {
-        console.log(i);
-      }
-      // also it will work as infinite loop because there is no condition to stop the loop and also there is no increment or decrement operator to change the value of i.
+            // question-1  print 1 to 10
+            // for (let i = 1; i <= 10; i++) {
+            //   console.log(i);
+            // }
+            // for (;;) {
+            //   console.log(i);
+            // }
+            // also it will work as infinite loop because there is no condition to stop the loop and also there is no increment or decrement operator to change the value of i.
 
-      // question-2  some of N natural numbers
-    //   let pr = prompt("Enter the number");
+            // question-2  some of N natural numbers
+          //   let pr = prompt("Enter the number");
 
-    //  if(pr === null){
-    //   console.log("cancelled");
-    //  }
+          //  if(pr === null){
+          //   console.log("cancelled");
+          //  }
 
-    //  else {
-    //   var n = Number(pr);
-    //   if(isNaN(n)){
-    //     console.log("invalid input");
-    //   }
-    //   else {
-    //      if(n > 0){
-    //       var sum = 0;
-    //       for (let i = 1; i <= n; i++) {
-    //         sum += i;
-    //       }
-    //       console.log(sum);
-    //      }
-    //      else{
-    //       console.log("should be +ve and more than 0");
-    //      }
-    //   }
-    //  }
-// 
-
-
-      // question-3  factorial of a number
-    //   let num = Number(prompt("enter the number"));
-    //   let fact = 1;
-    //   for (let i = 1; i <= num; i++) {
-    //     fact *= i;
-    //   }
-    //   console.log(fact);
+          //  else {
+          //   var n = Number(pr);
+          //   if(isNaN(n)){
+          //     console.log("invalid input");
+          //   }
+          //   else {
+          //      if(n > 0){
+          //       var sum = 0;
+          //       for (let i = 1; i <= n; i++) {
+          //         sum += i;
+          //       }
+          //       console.log(sum);
+          //      }
+          //      else{
+          //       console.log("should be +ve and more than 0");
+          //      }
+          //   }
+          //  }
+      //
 
 
-    //   // factor number 
-    //   let pr = prompt("Enter the number");
+            // question-3  factorial of a number
+          //   let num = Number(prompt("enter the number"));
+          //   let fact = 1;
+          //   for (let i = 1; i <= num; i++) {
+          //     fact *= i;
+          //   }
+          //   console.log(fact);
 
-    //  if(pr === null){
-    //   console.log("cancelled");
-    //  }
 
-    //  else {
-    //   var n = Number(pr);
-    //   if(isNaN(n)){
-    //     console.log("invalid input");
-    //   }
-    //   else {
-    //      if(n > 0){
-    //        for(i= 1; i<= Math.floor(n/2); i++){
-    //         if(n % i === 0){
-    //           console.log(i);
-    //         }
-    //        }
-    //        console.log(n);
-    //      }
-    //      else{
-    //       console.log("should be +ve and more than 0");
-    //      }
-    //   }
-    //  }
+          //   // factor number
+          //   let pr = prompt("Enter the number");
 
-    // question -5 prime number
-    //   let pr = prompt("Enter the number");
+          //  if(pr === null){
+          //   console.log("cancelled");
+          //  }
 
-    //  if(pr === null){
-    //   console.log("cancelled");
-    //  }
+          //  else {
+          //   var n = Number(pr);
+          //   if(isNaN(n)){
+          //     console.log("invalid input");
+          //   }
+          //   else {
+          //      if(n > 0){
+          //        for(i= 1; i<= Math.floor(n/2); i++){
+          //         if(n % i === 0){
+          //           console.log(i);
+          //         }
+          //        }
+          //        console.log(n);
+          //      }
+          //      else{
+          //       console.log("should be +ve and more than 0");
+          //      }
+          //   }
+          //  }
 
-    //  else {
-    //   var n = Number(pr); 
-    //   if(isNaN(n)){
-    //     console.log("invalid input");
-    //   } 
-    //   else {
-    //      if(n > 0){
-    //        var primeHai = true;
-    //        for ( var i = 2; i <= Math.floor(n/2); i++){
-    //         if(n % i === 0){
-    //           primeHai = false;
-    //           break;
-    //         }
-    //        }
-    //      }
-    //      else{
-    //       console.log("should be +ve and more than 0");
-    //      }
-    //   }
-    //  }
+          // question -5 prime number
+          //   let pr = prompt("Enter the number");
 
-    function isPrime(n){
-      if(n<=1) return false;
-      if(n<=2) return true;
-      if(n % 2 == 0) return false;
-      for(let i = 3 ; i<= Math.floor(Math.sqrt(n)); i+=2){
-        if(n % i == 0) return false;
-      }
-      return true;
-    }
+          //  if(pr === null){
+          //   console.log("cancelled");
+          //  }
+
+          //  else {
+          //   var n = Number(pr);
+          //   if(isNaN(n)){
+          //     console.log("invalid input");
+          //   }
+          //   else {
+          //      if(n > 0){
+          //        var primeHai = true;
+          //        for ( var i = 2; i <= Math.floor(n/2); i++){
+          //         if(n % i === 0){
+          //           primeHai = false;
+          //           break;
+          //         }
+          //        }
+          //      }
+          //      else{
+          //       console.log("should be +ve and more than 0");
+          //      }
+          //   }
+          //  }
+
+          // function isPrime(n){/
+            if(n<=1) return false;
+            if(n<=2) return true;
+            if(n % 2 == 0) return false;
+            for(let i = 3 ; i<= Math.floor(Math.sqrt(n)); i+=2){
+              if(n % i == 0) return false;
+            }
+            return true;
+          // }
+
+
+      //     var ans = promt("enter the number");
+      //     while(ans !=='exit'){
+      //       ans = prompt("enter the number");
+      //     }
+
+      //     // sum od digit
+      // var num = prompt("enter the number");
+      //   if (num === null){
+      //     console.log("cancelled");
+      //   }
+      //   else{
+
+      //    var n = Number(num);
+      //    if(isNaN(n)){
+      //     console.log("invalid input");
+      //    }
+
+      //    else {
+      //     if(n > 0){
+      //          while(n > 0){
+      //             var  sum = 0;
+      //              sum += n % 10;
+      //               sum = sum + rem;
+      //              n = Math.floor(n/10);
+      //          }
+
+      //          console.log(sum);
+      //     }
+      //     else {
+      //        console.log("should be +ve and more than 0");
+      //     }
+      //    }
+      //   }
+
+
+        // Number reverse
+
+      var num = prompt("enter the number");
+        if (num === null){
+          console.log("cancelled");
+        }
+        else{
+
+         var n = Number(num);
+         if(isNaN(n)){
+          console.log("invalid input");
+         }
+
+         else {
+          if(n > 0){
+            var rev = 0;
+            while(n > 0){
+              var rem = n % 10;
+              rev = rev * 10 + rem;
+              n = Math.floor(n/10);
+
+            }
+              
+          }
+          else {
+             console.log("should be +ve and more than 0");
+          }
+         }
+        }
+         
     </script>
   </body>
 </html>
