@@ -40,45 +40,93 @@
 
         // strong number
               
-      var num = prompt("enter the number");
-        if (num === null){
-          console.log("cancelled");
-        }
-        else{
+      // var num = prompt("enter the number");
+      //   if (num === null){
+      //     console.log("cancelled");
+      //   }
+      //   else{
 
-         var n = Number(num);
-         if(isNaN(n)){
-          console.log("invalid input");
-         }
+      //    var n = Number(num);
+      //    if(isNaN(n)){
+      //     console.log("invalid input");
+      //    }
 
-         else {
-          if(n > 0){
-           var sum = 0;
-           var copy = n;
+      //    else {
+      //     if(n > 0){
+      //      var sum = 0;
+      //      var copy = n;
 
-           while(n > 0){
-            var rem = n % 10;
-             var fact = 1;
-             for(var i = 1; i<=rem ; i++){
-                fact = fact * i;
-             }
+      //      while(n > 0){
+      //       var rem = n % 10;
+      //        var fact = 1;
+      //        for(var i = 1; i<=rem ; i++){
+      //           fact = fact * i;
+      //        }
 
-              sum = sum + fact;
-           n = Math.floor(n/10);
+      //         sum = sum + fact;
+      //      n = Math.floor(n/10);
             
-           }
-              if(copy == sum){
-                console.log("strong")
-              }
-              else {
-                console.log("not strong");
-              }
-          }
-          else {
-             console.log("should be +ve and more than 0");
-          }
-         }
+      //      }
+      //         if(copy == sum){
+      //           console.log("strong")
+      //         }
+      //         else {
+      //           console.log("not strong");
+      //         }
+      //     }
+      //     else {
+      //        console.log("should be +ve and more than 0");
+      //     }
+      //    }
+      //   }
+
+      // ------------
+
+     var i = 1;
+     do {
+       console.log("Hey");
+       i++;
+     }
+      while(i <= 5);
+
+      // repeat  hello 
+      let count = Number(prompt("enter the number of times you want to repeat hello"));
+
+      let i = 1;
+
+      if(isNaN(count) || count <=0){
+        console.log("valid input")
+      }
+
+      else {
+        do{
+          console.log("hello");
+          i++;
         }
+        while(i <= count);
+      }
+
+      // Guess the number
+      let random = Math.floor(Math.random() * 100)+ 1;
+      console.log(random);
+
+      let guess = -1;
+
+      while(guess !== random){
+          guess = Number(prompt("guess the number"))
+
+          if(isNaN(guess) ||  guess<1 || guess >100) {
+            console.log("try again b/w 1- 100");
+            continue;
+          }
+          if(guess > random){
+            console.log("too high , try again");
+          } else if(guess < random){
+            console.log("too low , try again");
+          } else{
+            console.log("Congrats 🎉 and number was" , guess);
+          }
+      }
 
   </script>
 </body>
