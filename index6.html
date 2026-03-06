@@ -56,22 +56,42 @@
     // console.log(min);
 
     //   second largest number in an array
-    let arr = [10, 30, 56, 43 , 29, 64 , 49 , 60];
+    // let arr = [10, 30, 56, 43 , 29, 64 , 49 , 60];
 
-    let max = Math.max(arr[0], arr[1]); //56
-    let sMax = Math.min(arr[0], arr[1]);//30
+    // let max = Math.max(arr[0], arr[1]); //56
+    // let sMax = Math.min(arr[0], arr[1]);//30
 
-    for(let i=2; i<arr.length; i++){
+    // for(let i=2; i<arr.length; i++){
+    //   if(arr[i] > max){
+    //     sMax = max;
+    //     max = arr[i];
+    //   }
+    //   else if(arr[i] > sMax){
+    //     sMax = arr[i];
+    //   }
+    // }
+       
+    // console.log(sMax)
+
+
+    // second smallest number in an array
+
+    let arr = [ 10 , 30 , 40, 40, 40 , 40];
+
+    let max = Math.max(arr[0], arr[1]);
+    let sMax = Math.min(arr[0], arr[1]);
+
+    for(let i = 2; i<arr.length; i++){
       if(arr[i] > max){
         sMax = max;
         max = arr[i];
       }
-      else if(arr[i] > sMax){
+      else if(arr[i] > sMax && arr[i] != max){
         sMax = arr[i];
       }
     }
-       
-    console.log(sMax)
+    console.log(sMax); 
+
   </script>
 </body>
 </html> 
